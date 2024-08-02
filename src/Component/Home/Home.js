@@ -43,7 +43,6 @@ import emailjs from '@emailjs/browser';
 export default function Home() {
     const title = "The Role of Technology in Modern Logistics Management";
 
-    const [hover, sethover] = useState(false);
 
     var settings = {
         dots: true,
@@ -81,21 +80,8 @@ export default function Home() {
         ]
     };
 
-    // filter data
-    const [alldata, setalldata] = useState(filterdata)
-    const [activeBtn, setActiveBtn] = useState("All");
-    // console.log(alldata)
-    const clickbtn = (e) => {
-        let word = e.target.value;
-        console.log(word)
-        if (word === "All") {
-            setalldata(filterdata);
-        } else {
-            const filtered = filterdata.filter(item => item.data === word);
-            setalldata(filtered);
-        }
-        setActiveBtn(word);
-    }
+
+
 
 
 
