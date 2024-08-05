@@ -1,11 +1,6 @@
-import { FaPlus } from 'react-icons/fa';
-import web_logo from '../../Assets/yg.png';
 import '../Header/Header.css';
-import { AiOutlineMinus } from 'react-icons/ai';
 import { useEffect, useState } from 'react';
 import { IoMdArrowRoundUp } from 'react-icons/io';
-import Listmenu from './Listmenu';
-import Listmobileview from './Listmobileview';
 import Headermenu from './headermenu';
 // import '../../Component/Header/Header.css'
 
@@ -45,7 +40,7 @@ export default function Header() {
 
 
             {/* scroll-top button */}
-            <div className={scroll ? 'fixed w-[45px] h-[45px] bottom-[25px] right-[30px] rounded-full visible opacity-100 scroll-top cursor-pointer scroll' : 'cursor-pointer fixed w-[45px] h-[45px] bottom-[25px] right-[30px] rounded-full opacity-0 invisible scroll-top'} onClick={scrollToTop}>
+            <div className={scroll ? 'fixed sm:w-[45px] w-9 sm:h-[45px] h-9 sm:bottom-[25px] bottom-4 sm:right-[30px] right-2 rounded-full visible opacity-100 scroll-top cursor-pointer scroll' : 'cursor-pointer fixed sm:w-[45px] w-9 sm:h-[45px] h-9 sm:bottom-[25px] bottom-4 sm:right-[30px] right-2 rounded-full opacity-0 invisible scroll-top'} onClick={scrollToTop}>
                 <IoMdArrowRoundUp className='text-[#8750f7] text-[24px] transition-all duration-300 ease-linear delay-0  hover:rotate-[360deg]' />
             </div>
         </>

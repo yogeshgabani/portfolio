@@ -8,10 +8,6 @@ import Slider from "react-slick";
 import { useEffect, useRef, useState } from 'react';
 import CountUpAnimation from '../Counter';
 import { GoArrowUpRight } from 'react-icons/go';
-import portfolio_one from '../../Assets/portfolio-1.webp';
-import portfolio_two from '../../Assets/portfolio-2.webp';
-import portfolio_three from '../../Assets/portfolio-3.webp';
-import portfolio_four from '../../Assets/portfolio-4.webp';
 import recomand from '../../Assets/recommendation.png';
 import education from '../../Assets/mortarboard.png';
 import html from '../../Assets/HTML5.png';
@@ -20,7 +16,6 @@ import bootstrap from '../../Assets/Bootstrap.png';
 import js from '../../Assets/js.webp';
 import react from '../../Assets/react.webp';
 import node from '../../Assets/Nodejs.png';
-import material from '../../Assets/material.png';
 import clientlogo from '../../Assets/testi-logo-1.webp';
 import clientimage from '../../Assets/testi-1.webp';
 import blog_one from '../../Assets/blog-2.webp';
@@ -31,7 +26,6 @@ import { FaCalendarDays, FaXTwitter } from 'react-icons/fa6';
 import { PiChatsCircle } from 'react-icons/pi';
 import { MdOutlineMailOutline, MdOutlinePhoneInTalk } from 'react-icons/md';
 import { IoLocationOutline } from 'react-icons/io5';
-import { filterdata } from '../Filter';
 import cv_download from '../../CV/Vinit_Mepani_CV.pdf';
 import Portfolio from '../Portfolio/Portfolio';
 import { Link } from 'react-router-dom';
@@ -190,16 +184,16 @@ export default function Home() {
                                 <div className='social-icon'>
                                     <ul className='flex  items-center gap-5'>
                                         <li className='w-[35px] h-[35px] cursor-pointer relative flex items-center justify-center rounded-full border-[1px] border-solid border-[#8750f7]'>
-                                            <a href="#" target='_blank'><FaFacebookF className='text-[#8750f7] text-[17px] icon-sm transition-all duration-300' /></a>
+                                            <a href="https://www.facebook.com/yogeshgabani1" target='_blank'><FaFacebookF className='text-[#8750f7] text-[17px] icon-sm transition-all duration-300' /></a>
                                         </li>
                                         <li className='w-[35px] h-[35px] cursor-pointer relative flex items-center justify-center rounded-full border-[1px] border-solid border-[#8750f7]'>
-                                            <a href="#" target='_blank'><FaLinkedinIn className='text-[#8750f7] text-[17px] icon-sm transition-all duration-300' /></a>
+                                            <a href="https://www.linkedin.com/in/gabaniyogesh" target='_blank'><FaLinkedinIn className='text-[#8750f7] text-[17px] icon-sm transition-all duration-300' /></a>
                                         </li>
                                         <li className='w-[35px] h-[35px] cursor-pointer relative flex items-center justify-center rounded-full border-[1px] border-solid border-[#8750f7]'>
-                                            <a href="https://github.com/yogeshgabani" target='_blank'><FaXTwitter className='text-[#8750f7] text-[17px] icon-sm transition-all duration-300' /></a>
+                                            <a href="https://x.com/gabaniyogesh" target='_blank'><FaXTwitter className='text-[#8750f7] text-[17px] icon-sm transition-all duration-300' /></a>
                                         </li>
                                         <li className='w-[35px] h-[35px] cursor-pointer relative flex items-center justify-center rounded-full border-[1px] border-solid border-[#8750f7]'>
-                                            <a href="# target='_blank'"><FaInstagramSquare className='text-[#8750f7] text-[17px] icon-sm transition-all duration-300' /></a>
+                                            <a href="https://www.instagram.com/gabaniyogesh" target='_blank'><FaInstagramSquare className='text-[#8750f7] text-[17px] icon-sm transition-all duration-300' /></a>
                                         </li>
                                         <li className='w-[35px] h-[35px] cursor-pointer relative flex items-center justify-center rounded-full border-[1px] border-solid border-[#8750f7]'>
                                             <a href="https://github.com/yogeshgabani" target='_blank'><FaGithub className='text-[#8750f7] text-[17px] icon-sm transition-all duration-300' /></a>
@@ -307,6 +301,7 @@ export default function Home() {
             <div className='bg-[#050709] md:py-[100px] sm:py-[70px] py-[50px]' id='resume'>
                 <div className='container mx-auto lg:px-10 px-3'>
                     <div className='grid md:grid-cols-2 grid-cols-1 gap-10'>
+                        {/* my experience */}
                         <div>
                             <div className='md:mb-[50px] mb-6 flex items-center wow animate__fadeInUp' data-wow-duration="2s" data-wow-delay="0.3s">
                                 <img className='w-[45px] h-[45px] text-red me-4' src={recomand} alt="" />
@@ -333,6 +328,7 @@ export default function Home() {
                                 <h5 className='text-[16px] text-[#dddddd]' >Surat, Gujarat</h5>
                             </div>
                         </div>
+                        {/* my education */}
                         <div>
                             <div className='md:mb-[50px] mb-6 flex items-center wow animate__fadeInUp' data-wow-duration="2s" data-wow-delay="0.3s">
                                 <img className='w-[45px] h-[45px] text-red me-4' src={education} alt="" />
@@ -344,17 +340,17 @@ export default function Home() {
                                 <h5 className='text-[16px] text-[#dddddd]' >Surat, Gujarat</h5>
                             </div>
                             <div className='bg-[#140c1c] py-5 px-[30px] rounded-[20px] relative md:mb-8 mb-4 z-10 after:absolute after:content=[""] after:w-full after:h-full after:top-0 after:left-0 after:rounded-[20px] after:z-[-1] edu-box wow animate__fadeInRight' data-wow-duration="2s" data-wow-delay="0.4s">
-                                <h3 className='md:text-[20px] text-[15px] font-extrabold text-[#8750f7] transition-all mb-2 duration-400 ease-in-out delay-0' >2022 - 2024</h3>
+                                <h3 className='md:text-[20px] text-[15px] font-extrabold text-[#8750f7] transition-all mb-2 duration-400 ease-in-out delay-0' >2014 - 2010</h3>
                                 <h1 className='md:text-[25px] text-[18px] uppercase text-white font-bold leading-[1.2] mb-2 transition-all duration-400 ease-in-out delay-0' >b.e.e.c.</h1>
                                 <h5 className='text-[16px] text-[#dddddd]' >Surat, Gujarat</h5>
                             </div>
                             <div className='bg-[#140c1c] py-5 px-[30px] rounded-[20px] relative md:mb-8 mb-4 z-10 after:absolute after:content=[""] after:w-full after:h-full after:top-0 after:left-0 after:rounded-[20px] after:z-[-1] edu-box wow animate__fadeInRight' data-wow-duration="2s" data-wow-delay="0.5s">
-                                <h3 className='md:text-[20px] text-[15px] font-extrabold text-[#8750f7] transition-all mb-2 duration-400 ease-in-out delay-0' >2020 - 2022</h3>
+                                <h3 className='md:text-[20px] text-[15px] font-extrabold text-[#8750f7] transition-all mb-2 duration-400 ease-in-out delay-0' >2009 - 2010</h3>
                                 <h1 className='md:text-[25px] text-[18px] uppercase text-white font-bold leading-[1.2] mb-2 transition-all duration-400 ease-in-out delay-0' >h.s.c.</h1>
                                 <h5 className='text-[16px] text-[#dddddd]' >Surat, Gujarat</h5>
                             </div>
                             <div className='bg-[#140c1c] py-5 px-[30px] rounded-[20px] relative md:mb-8 mb-4 z-10 after:absolute after:content=[""] after:w-full after:h-full after:top-0 after:left-0 after:rounded-[20px] after:z-[-1] edu-box wow animate__fadeInRight' data-wow-duration="2s" data-wow-delay="0.6s">
-                                <h3 className='md:text-[20px] text-[15px] font-extrabold text-[#8750f7] transition-all mb-2 duration-400 ease-in-out delay-0' >2018 - 2022</h3>
+                                <h3 className='md:text-[20px] text-[15px] font-extrabold text-[#8750f7] transition-all mb-2 duration-400 ease-in-out delay-0' >2007 - 2008</h3>
                                 <h1 className='md:text-[25px] text-[18px] uppercase text-white font-bold leading-[1.2] mb-2 transition-all duration-400 ease-in-out delay-0' >s.s.c.</h1>
                                 <h5 className='text-[16px] text-[#dddddd]' >Surat, Gujarat</h5>
                             </div>

@@ -6,6 +6,7 @@ export default function Listmenu() {
     const [activeTab, setActiveTab] = useState('services');
     const navigate = useNavigate();
     const scrollToSection = (id) => {
+        console.log(`Scrolling to ${id}`);
         setActiveTab(id);
         navigate('/');
         const element = document.getElementById(id);
