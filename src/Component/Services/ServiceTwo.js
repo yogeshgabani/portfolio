@@ -1,4 +1,4 @@
-import { Link, useLocation, useParams } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import background from '../../Assets/breadcrumb-bg.webp';
 import service_img from '../../Assets/service-img.webp';
 import { FaCheck } from 'react-icons/fa';
@@ -9,8 +9,6 @@ import WOW from 'wowjs';
 import emailjs from '@emailjs/browser'
 
 export default function ServiceTwo() {
-    const title = 'branding design'
-    const title1 = 'web design'
 
     const location = useLocation();
 

@@ -12,46 +12,14 @@ import pitnik from '../Assets/pitnik.png'
 export const filterdata = [
     {
         id : 1,
-        data : 'Branding',
-        image: Deloitte,
-        title: 'Deloitte',
-        link: 'deloitte',
-        subtitle: 'Project was about precision and information.'
-    },
-    {
-        id : 2,
         data : 'Web Designer',
-        image: New,
-        title: 'New Age',
-        link: 'new-age',
-        subtitle: 'Project was about precision and information.'
-    },
-    {
-        id : 3,
-        data : 'UX/UI',
-        image: Sebastian,
-        title: 'Sebastian',
-        link: 'sebastian',
-        subtitle: 'Project was about precision and information.'
-    },
-    {
-        id : 4,
-        data : 'Branding',
-        image: Mochnix,
-        title: 'Mochnix',
-        link: 'mochnix',
-        subtitle: 'Project was about precision and information.'
-    },
-    {
-        id : 5,
-        data : 'Branding',
         image: kidsshop,
         title: 'Kids Shoping',
         link: 'kids-shoping',
         subtitle: 'Project was about kids clothes shoping.'
     },
     {
-        id : 6,
+        id : 2,
         data : 'Web Designer',
         image: zen,
         title: 'Zen Admin Panel',
@@ -59,7 +27,7 @@ export const filterdata = [
         subtitle: 'Project was about admin panel.'
     },
     {
-        id : 7,
+        id : 3,
         data : 'Web Designer',
         image: townhub,
         title: 'Townhub',
@@ -67,7 +35,7 @@ export const filterdata = [
         subtitle: 'Project was about townhub.'
     },
     {
-        id : 8,
+        id : 4,
         data : 'Web Designer',
         image: dashonic,
         title: 'Dashonic',
@@ -75,11 +43,44 @@ export const filterdata = [
         subtitle: 'Project was about townhub.'
     },
     {
-        id : 9,
+        id : 5,
         data : 'Web Designer',
         image: pitnik,
         title: 'Pitnik',
         link: 'pitnik',
         subtitle: 'Project was about pitnik.'
     },
+    {
+        id : 6,
+        data : 'Branding',
+        image: Deloitte,
+        title: 'Deloitte',
+        link: 'deloitte',
+        subtitle: 'Project was about precision and information.'
+    },
+    {
+        id : 7,
+        data : 'Web Designer',
+        image: New,
+        title: 'New Age',
+        link: 'new-age',
+        subtitle: 'Project was about precision and information.'
+    },
+    {
+        id : 8,
+        data : 'UX/UI',
+        image: Sebastian,
+        title: 'Sebastian',
+        link: 'sebastian',
+        subtitle: 'Project was about precision and information.'
+    },
+    {
+        id : 9,
+        data : 'Branding',
+        image: Mochnix,
+        title: 'Mochnix',
+        link: 'mochnix',
+        subtitle: 'Project was about precision and information.'
+    },
+   
 ]
